@@ -2,9 +2,6 @@ import tweepy
 from datetime import timedelta, date
 import numpy as np
 
-
-ACCESS_TOKEN = "1274739398454784002-2vEIeKxlkdDQbrrOIwsqUWOTX9tbvS"
-ACCESS_SECRET = "Zg04NnIQ2v3DEVvMUoKFG7SawMA1NFUzu4tSu3Fxw9Fdo"
 CONSUMER_KEY = "niFysaEmv6CTSrG9pP5IA3QDK"
 CONSUMER_SECRET = "i1MFpIFS4SYYllSDMeis9dCk9WudHGB3bF04HJoUqJfH2nGtt6"
 
