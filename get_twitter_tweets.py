@@ -1,4 +1,4 @@
-from datetime import timedelta, date, timezone
+from datetime import timedelta, date
 import twint
 import pandas as pd
 
@@ -10,11 +10,9 @@ keyword = response
 
 start = date(2019, 7, 15)
 end = date(2020, 7, 10)
-#start = date(2020,7,8)
-#end = date(2020,7,10)
 delta = end-start
 dateList = []
-#print(delta.days)
+
 for i in range(delta.days):
     if (i % 7 == 0) or (i % 7 == 1) or (i % 7 == 2) or (i % 7 == 3) or (i % 7 == 4):
         new_day = start + timedelta(i)
@@ -27,7 +25,7 @@ c.Pandas = True
 c.Search = keyword
 c.Limit = 50
 c.Lang = 'en'
-#c.Store_csv = True
+
 
 df = pd.DataFrame()
 for i in range(len(dateList)-1):
