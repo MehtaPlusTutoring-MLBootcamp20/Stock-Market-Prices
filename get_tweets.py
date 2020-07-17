@@ -46,4 +46,4 @@ tweets_separate = tweets.tweet.apply(pd.Series)
 dates = dates[:-1]
 tweets_df= pd.concat([dates.reset_index(drop=True),tweets_separate.reset_index(drop=True)], axis=1)
 
-tweets_df.to_csv("AMZN.csv", index = False)
+tweets_df.to_csv("tweets.csv", index = False)
